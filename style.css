@@ -1,0 +1,70 @@
+.body {
+    font-family: var(--font-spartan);
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    background-color: var(--color-background);
+}
+
+.h1 {
+    font-family: var(--font-antonio);
+    font-weight: var(--fw-h1);
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.h2 {
+    font-family: var(--font-antonio);
+    font-weight: var(--fw-h2);
+    font-size: var(--fs-h2);
+    line-height: var(--lh-h2);
+    letter-spacing: var(--ls-h2);
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.h3 {
+    font-family: var(--font-spartan);
+    font-weight: var(--fw-h3);
+    font-size: var(--fs-h3);
+    line-height: var(--lh-h3);
+    letter-spacing: var(--ls-h3);
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.h4 {
+    font-family: var(--font-spartan);
+    font-weight: var(--fw-h4);
+    font-size: var(--fs-h4);
+    line-height: var(--lh-h4);
+    letter-spacing: var(--ls-h4);
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    height: 3rem;
+    width: 21.875rem;
+    padding: 0 1.75rem;
+    border: 1px solid var(--color-dark-grey);
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn__number {
+    opacity: 0.5;
+}
+
+.btn--active.btn--mercury {
+    background-color: var(--color-venus);
+    border: var(--color-venus);
+}
+
+.btn:hover {
+    background-color: var(--color-dark-grey);
+}
