@@ -48,6 +48,7 @@ body {
     color: var(--color-white);
     text-transform: uppercase;
 }
+/*
 
 .btn {
     display: flex;
@@ -60,7 +61,6 @@ body {
     background: transparent;
     cursor: pointer;
 }
-
 .btn__number {
     opacity: 0.5;
 }
@@ -72,4 +72,55 @@ body {
 
 .btn:hover {
     background-color: var(--color-dark-grey);
+}
+*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem 0 3.3rem;
+    border-bottom: 1px solid var(--color-dark-grey);
+}
+
+.nav__list {
+    display: flex;
+    gap: 3.3rem;
+}
+
+.nav__link {
+    color: var(--color-white);
+    opacity: 0.75;
+    display: flex;
+    align-items: center;
+    height: 8.5rem;
+    border-top: 0.4rem solid transparent;
+}
+
+.nav__link:hover {
+    opacity: 1;
+}
+.nav__link--mercury:hover {
+    border-top-color: var(--color-mercury);
+}
+.nav__link--venus:hover {
+    border-top-color: var(--color-venus);
+}
+.nav__link--earth:hover {
+    border-top-color: var(--color-earth);
+}
+.nav__link--mars:hover {
+    border-top-color: var(--color-mars);
+}
+.nav__link--jupiter:hover {
+    border-top-color: var(--color-jupiter);
+}
+.nav__link--saturn:hover {
+    border-top-color: var(--color-saturn);
+}
+.nav__link--uranus:hover {
+    border-top-color: var(--color-uranus);
+}
+.nav__link--neptune:hover {
+    border-top-color: var(--color-neptune);
 }
