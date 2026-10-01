@@ -3,8 +3,8 @@
     --color-background: #070724;
     --color-dark-grey: #38384f;
     --color-grey: #838391;
-    --color-venus: #419ebb;
-    --color-mercury: #eda249;
+    --color-venus: #eda249;
+    --color-mercury: #419ebb;
     --color-earth: #6f2ed6;
     --color-mars: #d14c32;
     --color-jupiter: #d83a34;
@@ -20,19 +20,19 @@
     --fw-h3: 700;
     --fw-h4: 700;
 
-    --fs-h1: 5rem;
-    --fs-h2: 2.5rem;
-    --fs-h3: 0.75rem;
-    --fs-h4: 0.688rem;
-    --fs-body: 0.875rem;
+    --fs-h1: 8rem;
+    --fs-h2: 4rem;
+    --fs-h3: 1.2rem;
+    --fs-h4: 1.1rem;
+    --fs-body: 1.4rem;
 
-    --lh-h1: 6.438rem;
-    --lh-h2: 3.25rem;
-    --lh-h3: 1.563rem;
-    --lh-h4: 1.563rem;
-    --lh-body: 1.563rem;
+    --lh-h1: 10.3rem;
+    --lh-h2: 5.2rem;
+    --lh-h3: 2.5rem;
+    --lh-h4: 2.5rem;
+    --lh-body: 2.5rem;
 
-    --ls-h2: -0.094rem;
-    --ls-h3: +0.163rem;
-    --ls-h4: 0.063rem;
+    --ls-h2: -0.15rem;
+    --ls-h3: 0.26rem;
+    --ls-h4: 0.1rem;
 }

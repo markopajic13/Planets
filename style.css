@@ -1,7 +1,12 @@
-.body {
+html {
+    font-size: 10px;
+}
+
+body {
     font-family: var(--font-spartan);
     font-size: var(--fs-body);
     line-height: var(--lh-body);
+    color: var(--color-white);
     background-color: var(--color-background);
 }
 
@@ -47,10 +52,10 @@
 .btn {
     display: flex;
     align-items: center;
-    gap: 1.75rem;
-    height: 3rem;
-    width: 21.875rem;
-    padding: 0 1.75rem;
+    gap: 2.8rem;
+    height: 4.8rem;
+    width: 35rem;
+    padding: 0 2.8rem;
     border: 1px solid var(--color-dark-grey);
     background: transparent;
     cursor: pointer;
@@ -61,8 +66,8 @@
 }
 
 .btn--active.btn--mercury {
-    background-color: var(--color-venus);
-    border: var(--color-venus);
+    background-color: var(--color-mercury);
+    border: var(--color-mercury);
 }
 
 .btn:hover {
