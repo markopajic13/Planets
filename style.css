@@ -125,6 +125,11 @@ header {
     border-top-color: var(--color-neptune);
 }
 
+.nav__checkbox,
+.nav__toggle {
+    display: none;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -137,5 +142,96 @@ header {
     .nav__link {
         height: auto;
         border-top: none;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        padding: 1.6rem 2.4rem;
+    }
+
+    .site__logo {
+        font-size: 2.8rem;
+    }
+
+    .nav__toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .nav__link {
+        font-size: 1.5rem;
+    }
+
+    .nav__checkbox:checked ~ .nav__list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        gap: 0;
+        padding: 2.4rem 2.4rem 0;
+    }
+
+    .nav__link {
+        gap: 2.4rem;
+        padding: 2rem 0;
+        border-bottom: 1px solid var(--color-dark-grey);
+        opacity: 1;
+    }
+
+    .nav__link::before {
+        content: '';
+        width: 2rem;
+        height: 2rem;
+        border-radius: 99rem;
+    }
+
+    .nav__link--mercury::before {
+        background-color: var(--color-mercury);
+    }
+
+    .nav__link--venus::before {
+        background-color: var(--color-venus);
+    }
+
+    .nav__link--earth::before {
+        background-color: var(--color-earth);
+    }
+
+    .nav__link--mars::before {
+        background-color: var(--color-mars);
+    }
+
+    .nav__link--jupiter::before {
+        background-color: var(--color-jupiter);
+    }
+
+    .nav__link--saturn::before {
+        background-color: var(--color-saturn);
+    }
+    .nav__link--uranus::before {
+        background-color: var(--color-uranus);
+    }
+
+    .nav__link--neptune::before {
+        background-color: var(--color-neptune);
+    }
+
+    .nav__link::after {
+        content: '';
+        width: 0.4rem;
+        height: 0.8rem;
+        margin: 0 0 0.8rem auto;
+        background: url('content/mobile-arrow.svg') no-repeat center;
     }
 }
