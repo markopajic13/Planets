@@ -48,32 +48,6 @@ body {
     color: var(--color-white);
     text-transform: uppercase;
 }
-/*
-
-.btn {
-    display: flex;
-    align-items: center;
-    gap: 2.8rem;
-    height: 4.8rem;
-    width: 35rem;
-    padding: 0 2.8rem;
-    border: 1px solid var(--color-dark-grey);
-    background: transparent;
-    cursor: pointer;
-}
-.btn__number {
-    opacity: 0.5;
-}
-
-.btn--active.btn--mercury {
-    background-color: var(--color-mercury);
-    border: var(--color-mercury);
-}
-
-.btn:hover {
-    background-color: var(--color-dark-grey);
-}
-*/
 
 header {
     display: flex;
@@ -130,6 +104,64 @@ header {
     display: none;
 }
 
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+    height: 4.8rem;
+    width: 35rem;
+    padding: 0 2.8rem;
+    border: 1px solid var(--color-dark-grey);
+    background: transparent;
+    cursor: pointer;
+}
+.btn__number {
+    opacity: 0.5;
+}
+
+.btn--active.btn--mercury {
+    background-color: var(--color-mercury);
+    border: var(--color-mercury);
+}
+
+.btn:hover {
+    background-color: var(--color-dark-grey);
+}
+
+.planet__description {
+    width: 35rem;
+    margin: 12.6rem 16.5rem 0 auto;
+}
+
+.planet__paragraph {
+    margin-top: 2.3rem;
+}
+
+.planet__link {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 2.4rem;
+    color: var(--color-grey);
+    text-decoration: none;
+}
+
+.planet__wikipedia {
+    text-decoration: underline;
+}
+
+.planet__source__button {
+    margin-left: 0.8rem;
+}
+
+.planet__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-top: 4rem;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -143,6 +175,7 @@ header {
         height: auto;
         border-top: none;
     }
+
 }
 
 @media (max-width: 425px) {
@@ -185,7 +218,7 @@ header {
     .nav__checkbox:checked ~ .nav__toggle {
         opacity: 0.5;
     }
-    
+
     .nav__link {
         gap: 2.4rem;
         padding: 2rem 0;
