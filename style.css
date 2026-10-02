@@ -176,6 +176,30 @@ header {
         border-top: none;
     }
 
+    .planet__description {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: auto;
+        margin: 46rem 4rem 0;
+    }
+
+    .planet__info {
+        width: 34rem;
+    }
+
+    .planet__buttons {
+        width: 28rem;
+        margin: 0;
+    }
+
+    .planet__buttons .btn {
+        width: 100%;
+    }
+
+    .planet__link {
+        margin-top: 3.2rem;
+    }
 }
 
 @media (max-width: 425px) {
@@ -213,6 +237,9 @@ header {
         right: 0;
         gap: 0;
         padding: 2.4rem 2.4rem 0;
+        background-color: var(--color-background);
+        z-index: 1;
+        min-height: 100vh;
     }
 
     .nav__checkbox:checked ~ .nav__toggle {
@@ -268,7 +295,7 @@ header {
         content: '';
         width: 0.4rem;
         height: 0.8rem;
-        margin: 0 0 0.8rem auto;
+        margin: 0 0.8rem 0 auto;
         background: url('content/mobile-arrow.svg') no-repeat center;
     }
 }
