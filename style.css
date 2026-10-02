@@ -94,7 +94,7 @@ header {
     display: flex;
     align-items: center;
     height: 8.5rem;
-    border-top: 0.4rem solid transparent;
+    border-top: 4px solid transparent;
 }
 
 .nav__link:hover {
@@ -197,7 +197,7 @@ header {
         content: '';
         width: 2rem;
         height: 2rem;
-        border-radius: 99rem;
+        border-radius: 50%;
     }
 
     .nav__link--mercury::before {
