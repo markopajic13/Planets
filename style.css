@@ -130,7 +130,7 @@ header {
 
 .planet__description {
     width: 35rem;
-    margin: 12.6rem 16.5rem 0 auto;
+    margin-top: 12.6rem;
 }
 
 .planet__paragraph {
@@ -165,7 +165,30 @@ header {
 .planet__tab-mobile {
     display: none;
 }
+.planet {
+    display: flex;
+}
+.planet-img {
+    margin: 24.2rem 30rem 0 33.5rem;
+    width: 29rem;
+    height: 29rem;
+}
 
+.planet-img__internal--mercury {
+    position: absolute;
+    width: 13.9rem;
+    height: 27.8rem;
+    top: 33.4rem;
+    left: 48.1rem;
+}
+
+.planet-img__surface--mercury {
+    position: absolute;
+    width: 16.9rem;
+    height: 19.9rem;
+    top: 55.4rem;
+    left: 39.9rem;
+}
 @media (min-width: 768px) and (max-width: 1279px) {
     header {
         flex-direction: column;
@@ -203,6 +226,28 @@ header {
 
     .planet__link {
         margin-top: 3.2rem;
+    }
+
+    .planet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planet-img {
+        width: 18.4rem;
+        height: 18.4rem;
+        margin: 14.6rem 0 13rem 0;
+    }
+
+    .planet__description {
+        align-self: stretch;
+        width: auto;
+    }
+
+    .planet-img__internal--mercury,
+    .planet-img__surface--mercury {
+        display: none;
     }
 }
 
@@ -367,6 +412,24 @@ header {
 
     .planet__description {
         width: auto;
-        margin: 0;
+        margin: 0 2.4rem 0 2.4rem;
+        
+    }
+
+    .planet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planet-img {
+        width: 11.1rem;
+        height: 11.1rem;
+        margin: 14.6rem 0 9.8rem 0;
+    }
+
+    .planet-img__internal--mercury,
+    .planet-img__surface--mercury {
+        display: none;
     }
 }
