@@ -48,32 +48,6 @@ body {
     color: var(--color-white);
     text-transform: uppercase;
 }
-/*
-
-.btn {
-    display: flex;
-    align-items: center;
-    gap: 2.8rem;
-    height: 4.8rem;
-    width: 35rem;
-    padding: 0 2.8rem;
-    border: 1px solid var(--color-dark-grey);
-    background: transparent;
-    cursor: pointer;
-}
-.btn__number {
-    opacity: 0.5;
-}
-
-.btn--active.btn--mercury {
-    background-color: var(--color-mercury);
-    border: var(--color-mercury);
-}
-
-.btn:hover {
-    background-color: var(--color-dark-grey);
-}
-*/
 
 header {
     display: flex;
@@ -130,7 +104,69 @@ header {
     display: none;
 }
 
-@media (max-width: 768px) {
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+    height: 4.8rem;
+    width: 35rem;
+    padding: 0 2.8rem;
+    border: 1px solid var(--color-dark-grey);
+    background: transparent;
+    cursor: pointer;
+}
+.btn__number {
+    opacity: 0.5;
+}
+
+.btn--active.btn--mercury {
+    background-color: var(--color-mercury);
+    border: var(--color-mercury);
+}
+
+.btn:hover {
+    background-color: var(--color-dark-grey);
+}
+
+.planet__description {
+    width: 35rem;
+    margin: 12.6rem 16.5rem 0 auto;
+}
+
+.planet__paragraph {
+    margin-top: 2.3rem;
+}
+
+.planet__link {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 2.4rem;
+    color: var(--color-grey);
+    text-decoration: none;
+}
+
+.planet__wikipedia {
+    text-decoration: underline;
+}
+
+.planet__source__button {
+    margin-left: 0.8rem;
+}
+
+.planet__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-top: 4rem;
+}
+
+.planet__tab-mobile {
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
     header {
         flex-direction: column;
         justify-content: center;
@@ -143,9 +179,34 @@ header {
         height: auto;
         border-top: none;
     }
+
+    .planet__description {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: auto;
+        margin: 0rem 2.4rem 0;
+    }
+
+    .planet__paragraph {
+        width: 34rem;
+    }
+
+    .planet__buttons {
+        width: 28rem;
+        margin: 0;
+    }
+
+    .planet__buttons .btn {
+        width: 100%;
+    }
+
+    .planet__link {
+        margin-top: 3.2rem;
+    }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 767px) {
     header {
         position: relative;
         flex-direction: row;
@@ -180,12 +241,15 @@ header {
         right: 0;
         gap: 0;
         padding: 2.4rem 2.4rem 0;
+        background-color: var(--color-background);
+        z-index: 2;
+        min-height: 100vh;
     }
 
     .nav__checkbox:checked ~ .nav__toggle {
         opacity: 0.5;
     }
-    
+
     .nav__link {
         gap: 2.4rem;
         padding: 2rem 0;
@@ -235,7 +299,74 @@ header {
         content: '';
         width: 0.4rem;
         height: 0.8rem;
-        margin: 0 0 0.8rem auto;
+        margin: 0 0.8rem 0 auto;
         background: url('content/mobile-arrow.svg') no-repeat center;
+    }
+
+    .nav__list li:last-child .nav__link {
+        border-bottom: none;
+    }
+
+    .nav__link {
+        border-top: none;
+    }
+
+    .planet__buttons {
+        position: absolute;
+        top: 8.5rem;
+        left: 0;
+        z-index: 1;
+        flex-direction: row;
+        gap: 0;
+        padding-inline: 2.4rem;
+        border-bottom: 1px solid var(--color-dark-grey);
+        width: 100%;
+        margin: 0;
+    }
+
+    .planet__buttons .btn {
+        justify-content: center;
+        flex: 1;
+        width: auto;
+        height: 5rem;
+        padding: 0;
+        border: 0;
+        border-bottom: 4px solid transparent;
+    }
+
+    .planet__buttons .btn--active {
+        border-bottom-color: var(--color-mercury);
+        background: transparent;
+    }
+
+    .planet__tab-mobile {
+        display: block;
+    }
+
+    .btn__number,
+    .planet__tab-desktop {
+        display: none;
+    }
+
+    .planet__info {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planet__title {
+        font-size: var(--fs-h2);
+        line-height: var(--lh-h2);
+    }
+
+    .planet__paragraph {
+        margin-top: 1.6rem;
+        text-align: center;
+    }
+
+    .planet__description {
+        width: auto;
+        margin: 0;
     }
 }
