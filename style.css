@@ -166,7 +166,7 @@ header {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1279px) {
     header {
         flex-direction: column;
         justify-content: center;
@@ -185,11 +185,7 @@ header {
         align-items: center;
         justify-content: space-between;
         width: auto;
-        margin: 46rem 4rem 0;
-    }
-
-    .planet__info {
-        width: 34rem;
+        margin: 0rem 2.4rem 0;
     }
 
     .planet__buttons {
@@ -206,11 +202,7 @@ header {
     }
 }
 
-@media (max-width: 425px) {
-    .planet {
-        position: relative;
-    }
-
+@media (min-width: 320px) and (max-width: 768px) {
     header {
         position: relative;
         flex-direction: row;
@@ -307,9 +299,13 @@ header {
         background: url('content/mobile-arrow.svg') no-repeat center;
     }
 
+    .nav__list li:last-child .nav__link {
+        border-bottom: none;
+    }
+
     .planet__buttons {
         position: absolute;
-        top: -46rem;
+        top: 8.5rem;
         left: 0;
         z-index: 1;
         flex-direction: row;
@@ -337,6 +333,7 @@ header {
     .planet__tab-mobile {
         display: block;
     }
+
     .btn__number,
     .planet__tab-desktop {
         display: none;
