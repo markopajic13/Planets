@@ -188,6 +188,10 @@ header {
         margin: 0rem 2.4rem 0;
     }
 
+    .planet__paragraph {
+        width: 34rem;
+    }
+
     .planet__buttons {
         width: 28rem;
         margin: 0;
@@ -301,6 +305,10 @@ header {
 
     .nav__list li:last-child .nav__link {
         border-bottom: none;
+    }
+
+    .nav__link {
+        border-top: none;
     }
 
     .planet__buttons {
