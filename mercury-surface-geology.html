@@ -19,7 +19,11 @@
             <img src="content/hamburger.svg" alt="Menu" />
         </label>
         <ul class="nav__list">
-            <li><a href="index.html" class="nav__link nav__link--mercury h4">mercury</a></li>
+            <li>
+                <a href="index.html" class="nav__link nav__link--mercury nav__link--active h4"
+                    >mercury</a
+                >
+            </li>
             <li><a href="#" class="nav__link nav__link--venus h4">venus</a></li>
             <li><a href="#" class="nav__link nav__link--earth h4">earth</a></li>
             <li><a href="#" class="nav__link nav__link--mars h4">mars</a></li>
@@ -31,39 +35,57 @@
     </header>
     <body>
         <main class="planet">
-            <section class="planet__description">
-                <div class="planet__info">
-                    <h1 class="planet__title h1">Mercury</h1>
-                    <p class="planet__paragraph">
-                        Mercury's surface is similar in appearance to that of the Moon, showing
-                        extensive mare-like plains and heavy cratering, indicating that it has been
-                        geologically inactive for billions of years. It is more heterogeneous than
-                        either Mars's or the Moon’s.
-                    </p>
-                    <a class="planet__link" href="https://en.wikipedia.org/wiki/Mercury_(planet)">
-                        <span class="planet__source">Source:</span>
-                        <span class="planet__wikipedia">Wikipedia</span>
-                        <img class="planet__source__button" src="content/link-arrow.svg" alt="" />
-                    </a>
-                </div>
-                <nav class="planet__buttons">
-                    <a href="index.html" class="btn h3">
-                        <span class="btn__number">01</span>
-                        <span class="planet__tab-desktop">overview</span>
-                        <span class="planet__tab-mobile">overview</span>
-                    </a>
-                    <a href="mercury-internal-structure.html" class="btn h3">
-                        <span class="btn__number">02</span>
-                        <span class="planet__tab-desktop">internal structure</span>
-                        <span class="planet__tab-mobile">structure</span>
-                    </a>
-                    <a href="mercury-surface-geology.html" class="btn btn--active btn--mercury h3">
-                        <span class="btn__number">03</span>
-                        <span class="planet__tab-desktop">surface geology</span>
-                        <span class="planet__tab-mobile">surface</span>
-                    </a>
-                </nav>
-            </section>
+            <div class="planet__wrapper">
+                <img
+                    class="planet-img planet-img--surface"
+                    src="content/mercury-surface.png"
+                    alt=""
+                />
+
+                <section class="planet__description">
+                    <div class="planet__info">
+                        <h1 class="planet__title h1">Mercury</h1>
+                        <p class="planet__paragraph">
+                            Mercury's surface is similar in appearance to that of the Moon, showing
+                            extensive mare-like plains and heavy cratering, indicating that it has
+                            been geologically inactive for billions of years. It is more
+                            heterogeneous than either Mars's or the Moon’s.
+                        </p>
+                        <a
+                            class="planet__link"
+                            href="https://en.wikipedia.org/wiki/Mercury_(planet)"
+                        >
+                            <span class="planet__source">Source:</span>
+                            <span class="planet__wikipedia">Wikipedia</span>
+                            <img
+                                class="planet__source__button"
+                                src="content/link-arrow.svg"
+                                alt=""
+                            />
+                        </a>
+                    </div>
+                    <nav class="planet__buttons">
+                        <a href="index.html" class="btn h3">
+                            <span class="btn__number">01</span>
+                            <span class="planet__tab-desktop">overview</span>
+                            <span class="planet__tab-mobile">overview</span>
+                        </a>
+                        <a href="mercury-internal-structure.html" class="btn h3">
+                            <span class="btn__number">02</span>
+                            <span class="planet__tab-desktop">internal structure</span>
+                            <span class="planet__tab-mobile">structure</span>
+                        </a>
+                        <a
+                            href="mercury-surface-geology.html"
+                            class="btn btn--active btn--mercury h3"
+                        >
+                            <span class="btn__number">03</span>
+                            <span class="planet__tab-desktop">surface geology</span>
+                            <span class="planet__tab-mobile">surface</span>
+                        </a>
+                    </nav>
+                </section>
+            </div>
         </main>
     </body>
 </html>

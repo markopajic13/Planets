@@ -130,7 +130,6 @@ header {
 
 .planet__description {
     width: 35rem;
-    margin: 12.6rem 16.5rem 0 auto;
 }
 
 .planet__paragraph {
@@ -166,6 +165,44 @@ header {
     display: none;
 }
 
+.planet-img {
+    width: 29rem;
+    height: 29rem;
+}
+
+.planet-img__internal--mercury {
+    position: absolute;
+    width: 13.9rem;
+    height: 27.8rem;
+    top: 33.4rem;
+    left: 48.1rem;
+}
+
+.planet-img__surface--mercury {
+    position: absolute;
+    width: 16.9rem;
+    height: 19.9rem;
+    top: 55.4rem;
+    left: 39.9rem;
+}
+
+.planet__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 16.5rem;
+    margin-top: 12.6rem;
+}
+
+.planet-img--surface {
+    height: auto;
+    margin-bottom: -13.5rem;
+}
+
+.nav__link--active {
+    opacity: 1;
+}
+
 @media (min-width: 768px) and (max-width: 1279px) {
     header {
         flex-direction: column;
@@ -183,9 +220,8 @@ header {
     .planet__description {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         width: auto;
-        margin: 0rem 2.4rem 0;
+        gap: 10rem;
     }
 
     .planet__paragraph {
@@ -203,6 +239,25 @@ header {
 
     .planet__link {
         margin-top: 3.2rem;
+    }
+
+    .planet-img {
+        width: 18.4rem;
+        height: 18.4rem;
+    }
+
+    .planet__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 14.6rem;
+        justify-content: space-around;
+        gap: 13rem;
+    }
+
+    .planet-img--surface {
+        height: auto;
+        margin-bottom: -8.6rem;
     }
 }
 
@@ -367,6 +422,23 @@ header {
 
     .planet__description {
         width: auto;
-        margin: 0;
+    }
+
+    .planet__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 14.6rem 2.4rem 0 2.4rem;
+        gap: 10rem;
+    }
+
+    .planet-img {
+        width: 11.1rem;
+        height: 11.1rem;
+    }
+
+    .planet-img--surface {
+        height: auto;
+        margin-bottom: -5.2rem;
     }
 }
