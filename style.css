@@ -239,12 +239,13 @@ header {
         height: auto;
         border-top: none;
     }
-
+    
     .planet__description {
         display: flex;
         align-items: center;
         width: auto;
         gap: 10rem;
+        margin-top: 13rem;
     }
 
     .planet__paragraph {
@@ -275,7 +276,18 @@ header {
         align-items: center;
         margin-top: 14.6rem;
         justify-content: space-around;
-        gap: 13rem;
+        flex-wrap: nowrap;
+        margin-inline: 2rem;
+    }
+
+    .planet__stats {
+        gap: 1.1rem;
+        margin-top: 2.7rem;
+    }
+
+    .planet__stat {
+        gap: 0.6rem;
+        padding: 1.6rem 1.5rem 1.9rem;
     }
 
     .planet-img--surface {
@@ -445,14 +457,28 @@ header {
 
     .planet__description {
         width: auto;
+        margin-top: 10rem;
     }
 
     .planet__wrapper {
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
         align-items: center;
         margin: 14.6rem 2.4rem 0 2.4rem;
-        gap: 10rem;
+    }
+
+    .planet__stats {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 2.8rem;
+    }
+
+    .planet__stat {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.9rem 2.4rem 1.3rem;
     }
 
     .planet-img {
