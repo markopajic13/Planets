@@ -198,6 +198,11 @@ header {
     height: auto;
     margin-bottom: -13.5rem;
 }
+
+.nav__link--active {
+    opacity: 1;
+}
+
 @media (min-width: 768px) and (max-width: 1279px) {
     header {
         flex-direction: column;
@@ -255,7 +260,6 @@ header {
         margin-bottom: -8.6rem;
     }
 }
-
 
 @media (max-width: 767px) {
     header {
