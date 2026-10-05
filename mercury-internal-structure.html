@@ -31,49 +31,53 @@
     </header>
     <body>
         <main class="planet">
-            <img class="planet-img" src="content/mercury-overview.png" alt="" />
-            <img
-                class=" planet-img__internal planet-img__internal--mercury"
-                src="content/mercury-internal.png"
-                alt=""
-            />
+            <div class="planet__wrapper">
+                <img class="planet-img planet-img--internal" src="content/mercury-internal.png" alt="" />
 
-            <section class="planet__description">
-                <div class="planet__info">
-                    <h1 class="planet__title h1">Mercury</h1>
-                    <p class="planet__paragraph">
-                        Mercury appears to have a solid silicate crust and mantle overlying a solid,
-                        iron sulfide outer core layer, a deeper liquid core layer, and a solid inner
-                        core. The planet's density is the second highest in the Solar System at
-                        5.427 g/cm3 , only slightly less than Earth's density.
-                    </p>
-                    <a class="planet__link" href="https://en.wikipedia.org/wiki/Mercury_(planet)">
-                        <span class="planet__source">Source:</span>
-                        <span class="planet__wikipedia">Wikipedia</span>
-                        <img class="planet__source__button" src="content/link-arrow.svg" alt="" />
-                    </a>
-                </div>
-                <nav class="planet__buttons">
-                    <a href="index.html" class="btn h3">
-                        <span class="btn__number">01</span>
-                        <span class="planet__tab-desktop">overview</span>
-                        <span class="planet__tab-mobile">overview</span>
-                    </a>
-                    <a
-                        href="mercury-internal-structure.html"
-                        class="btn btn--active btn--mercury h3"
-                    >
-                        <span class="btn__number">02</span>
-                        <span class="planet__tab-desktop">internal structure</span>
-                        <span class="planet__tab-mobile">structure</span>
-                    </a>
-                    <a href="mercury-surface-geology.html" class="btn h3">
-                        <span class="btn__number">03</span>
-                        <span class="planet__tab-desktop">surface geology</span>
-                        <span class="planet__tab-mobile">surface</span>
-                    </a>
-                </nav>
-            </section>
+                <section class="planet__description">
+                    <div class="planet__info">
+                        <h1 class="planet__title h1">Mercury</h1>
+                        <p class="planet__paragraph">
+                            Mercury appears to have a solid silicate crust and mantle overlying a
+                            solid, iron sulfide outer core layer, a deeper liquid core layer, and a
+                            solid inner core. The planet's density is the second highest in the
+                            Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
+                        </p>
+                        <a
+                            class="planet__link"
+                            href="https://en.wikipedia.org/wiki/Mercury_(planet)"
+                        >
+                            <span class="planet__source">Source:</span>
+                            <span class="planet__wikipedia">Wikipedia</span>
+                            <img
+                                class="planet__source__button"
+                                src="content/link-arrow.svg"
+                                alt=""
+                            />
+                        </a>
+                    </div>
+                    <nav class="planet__buttons">
+                        <a href="index.html" class="btn h3">
+                            <span class="btn__number">01</span>
+                            <span class="planet__tab-desktop">overview</span>
+                            <span class="planet__tab-mobile">overview</span>
+                        </a>
+                        <a
+                            href="mercury-internal-structure.html"
+                            class="btn btn--active btn--mercury h3"
+                        >
+                            <span class="btn__number">02</span>
+                            <span class="planet__tab-desktop">internal structure</span>
+                            <span class="planet__tab-mobile">structure</span>
+                        </a>
+                        <a href="mercury-surface-geology.html" class="btn h3">
+                            <span class="btn__number">03</span>
+                            <span class="planet__tab-desktop">surface geology</span>
+                            <span class="planet__tab-mobile">surface</span>
+                        </a>
+                    </nav>
+                </section>
+            </div>
         </main>
     </body>
 </html>
