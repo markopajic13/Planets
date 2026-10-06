@@ -76,28 +76,36 @@ header {
 .nav__link:hover {
     opacity: 1;
 }
-.nav__link--mercury:hover {
+.nav__link--mercury:hover,
+.nav__link--mercury.nav__link--active {
     border-top-color: var(--color-mercury);
 }
-.nav__link--venus:hover {
+.nav__link--venus:hover,
+.nav__link--venus.nav__link--active {
     border-top-color: var(--color-venus);
 }
-.nav__link--earth:hover {
+.nav__link--earth:hover,
+.nav__link--earth.nav__link--active {
     border-top-color: var(--color-earth);
 }
-.nav__link--mars:hover {
+.nav__link--mars:hover,
+.nav__link--mars.nav__link--active {
     border-top-color: var(--color-mars);
 }
-.nav__link--jupiter:hover {
+.nav__link--jupiter:hover,
+.nav__link--jupiter.nav__link--active {
     border-top-color: var(--color-jupiter);
 }
-.nav__link--saturn:hover {
+.nav__link--saturn:hover,
+.nav__link--saturn.nav__link--active {
     border-top-color: var(--color-saturn);
 }
-.nav__link--uranus:hover {
+.nav__link--uranus:hover,
+.nav__link--uranus.nav__link--active {
     border-top-color: var(--color-uranus);
 }
-.nav__link--neptune:hover {
+.nav__link--neptune:hover,
+.nav__link--neptune.nav__link--active {
     border-top-color: var(--color-neptune);
 }
 
@@ -406,6 +414,7 @@ header {
 
     .planet__stats {
         gap: 1.1rem;
+        max-width: 72rem;
         margin-top: 2.7rem;
         margin-bottom: 3.6rem;
     }
@@ -681,5 +690,37 @@ header {
     }
     .planet-img--neptune.planet-img--surface {
         height: auto;
+    }
+
+    .btn--active.btn--mercury {
+        border: var(--color-mercury);
+    }
+
+    .btn--active.btn--venus {
+        border-bottom-color: var(--color-venus);
+    }
+
+    .btn--active.btn--earth {
+        border-bottom-color: var(--color-earth);
+    }
+
+    .btn--active.btn--mars {
+        border-bottom-color: var(--color-mars);
+    }
+
+    .btn--active.btn--jupiter {
+        border-bottom-color: var(--color-jupiter);
+    }
+
+    .btn--active.btn--saturn {
+        border-bottom-color: var(--color-saturn);
+    }
+
+    .btn--active.btn--uranus {
+        border-bottom-color: var(--color-uranus);
+    }
+
+    .btn--active.btn--neptune {
+        border-bottom-color: var(--color-neptune);
     }
 }
