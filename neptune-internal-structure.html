@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="variables.css" />
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" />
-        <title>Planets</title>
+        <title>Neptune</title>
     </head>
     <header>
         <a href="index.html" class="site__logo h2">the planets</a>
@@ -22,11 +22,14 @@
         </label>
         <ul class="nav__list">
             <li>
-                <a href="#" class="nav__link nav__link--mercury nav__link--active h4">mercury</a>
+                <a href="index.html" class="nav__link nav__link--mercury h4">mercury</a>
             </li>
-            <li><a href="venus-overview.html" class="nav__link nav__link--venus h4">venus</a></li>
-
-            <li><a href="earth-overview.html" class="nav__link nav__link--earth h4">earth</a></li>
+            <li>
+                <a href="venus-overview.html" class="nav__link nav__link--venus h4">venus</a>
+            </li>
+            <li>
+                <a href="earth-overview.html" class="nav__link nav__link--earth h4">earth</a>
+            </li>
             <li><a href="mars-overview.html" class="nav__link nav__link--mars h4">mars</a></li>
             <li>
                 <a href="jupiter-overview.html" class="nav__link nav__link--jupiter h4">jupiter</a>
@@ -38,7 +41,11 @@
                 <a href="uranus-overview.html" class="nav__link nav__link--uranus h4">uranus</a>
             </li>
             <li>
-                <a href="neptune-overview.html" class="nav__link nav__link--neptune h4">neptune</a>
+                <a
+                    href="neptune-overview.html"
+                    class="nav__link nav__link--neptune nav__link--active h4"
+                    >neptune</a
+                >
             </li>
         </ul>
     </header>
@@ -46,24 +53,20 @@
         <main class="planet">
             <div class="planet__wrapper">
                 <img
-                    class="planet-img planet-img--internal"
-                    src="content/mercury-internal.png"
-                    alt=""
+                    class="planet-img planet-img--neptune"
+                    src="content/neptune-internal.png"
+                    alt="Uranus"
                 />
-
                 <section class="planet__description">
                     <div class="planet__info">
-                        <h1 class="planet__title h1">Mercury</h1>
+                        <h1 class="planet__title h1">Neptune</h1>
                         <p class="planet__paragraph">
-                            Mercury appears to have a solid silicate crust and mantle overlying a
-                            solid, iron sulfide outer core layer, a deeper liquid core layer, and a
-                            solid inner core. The planet's density is the second highest in the
-                            Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
+                            Neptune's internal structure resembles that of Uranus. Its atmosphere
+                            forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the
+                            way towards the core. Increasing concentrations of methane, ammonia and
+                            water are found in the lower regions.
                         </p>
-                        <a
-                            class="planet__link"
-                            href="https://en.wikipedia.org/wiki/Mercury_(planet)"
-                        >
+                        <a class="planet__link" href="https://en.wikipedia.org/wiki/Neptune">
                             <span class="planet__source">Source:</span>
                             <span class="planet__wikipedia">Wikipedia</span>
                             <img
@@ -74,20 +77,17 @@
                         </a>
                     </div>
                     <nav class="planet__buttons">
-                        <a href="index.html" class="btn h3">
+                        <a href="neptune-overview.html" class="btn  h3">
                             <span class="btn__number">01</span>
                             <span class="planet__tab-desktop">overview</span>
                             <span class="planet__tab-mobile">overview</span>
                         </a>
-                        <a
-                            href="mercury-internal-structure.html"
-                            class="btn btn--active btn--mercury h3"
-                        >
+                        <a href="neptune-internal-structure.html" class="btn btn--active btn--neptune h3">
                             <span class="btn__number">02</span>
                             <span class="planet__tab-desktop">internal structure</span>
                             <span class="planet__tab-mobile">structure</span>
                         </a>
-                        <a href="mercury-surface-geology.html" class="btn h3">
+                        <a href="neptune-surface-geology.html" class="btn h3">
                             <span class="btn__number">03</span>
                             <span class="planet__tab-desktop">surface geology</span>
                             <span class="planet__tab-mobile">surface</span>
@@ -97,19 +97,19 @@
                 <section class="planet__stats">
                     <div class="planet__stat">
                         <span class="planet__stats-label h4">Rotation time</span>
-                        <span class="planet__stats-value h2">58.6 days</span>
+                        <span class="planet__stats-value h2">16.08 hours</span>
                     </div>
                     <div class="planet__stat">
                         <span class="planet__stats-label h4">Revolution time</span>
-                        <span class="planet__stats-value h2">87.97 days</span>
+                        <span class="planet__stats-value h2">164.79 years</span>
                     </div>
                     <div class="planet__stat">
                         <span class="planet__stats-label h4">Radius</span>
-                        <span class="planet__stats-value h2">2,439.7 km</span>
+                        <span class="planet__stats-value h2">24,622 km</span>
                     </div>
                     <div class="planet__stat">
                         <span class="planet__stats-label h4">Average temp.</span>
-                        <span class="planet__stats-value h2">430°C</span>
+                        <span class="planet__stats-value h2">-201°C</span>
                     </div>
                 </section>
             </div>

@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="variables.css" />
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" />
-        <title>Planets</title>
+        <title>Jupiter</title>
     </head>
     <header>
         <a href="index.html" class="site__logo h2">the planets</a>
@@ -22,14 +22,21 @@
         </label>
         <ul class="nav__list">
             <li>
-                <a href="#" class="nav__link nav__link--mercury nav__link--active h4">mercury</a>
+                <a href="index.html" class="nav__link nav__link--mercury h4">mercury</a>
             </li>
-            <li><a href="venus-overview.html" class="nav__link nav__link--venus h4">venus</a></li>
-
-            <li><a href="earth-overview.html" class="nav__link nav__link--earth h4">earth</a></li>
+            <li>
+                <a href="venus-overview.html" class="nav__link nav__link--venus h4">venus</a>
+            </li>
+            <li>
+                <a href="earth-overview.html" class="nav__link nav__link--earth h4">earth</a>
+            </li>
             <li><a href="mars-overview.html" class="nav__link nav__link--mars h4">mars</a></li>
             <li>
-                <a href="jupiter-overview.html" class="nav__link nav__link--jupiter h4">jupiter</a>
+                <a
+                    href="jupiter-overview.html"
+                    class="nav__link nav__link--jupiter nav__link--active h4"
+                    >jupiter</a
+                >
             </li>
             <li>
                 <a href="saturn-overview.html" class="nav__link nav__link--saturn h4">saturn</a>
@@ -46,24 +53,20 @@
         <main class="planet">
             <div class="planet__wrapper">
                 <img
-                    class="planet-img planet-img--internal"
-                    src="content/mercury-internal.png"
-                    alt=""
+                    class="planet-img planet-img--jupiter"
+                    src="content/jupiter-internal.png"
+                    alt="jupiter"
                 />
-
                 <section class="planet__description">
                     <div class="planet__info">
-                        <h1 class="planet__title h1">Mercury</h1>
+                        <h1 class="planet__title h1">Jupiter</h1>
                         <p class="planet__paragraph">
-                            Mercury appears to have a solid silicate crust and mantle overlying a
-                            solid, iron sulfide outer core layer, a deeper liquid core layer, and a
-                            solid inner core. The planet's density is the second highest in the
-                            Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
+                            When the Juno arrived in 2016, it found that Jupiter has a very diffuse
+                            core that mixes into its mantle. A possible cause is an impact from a
+                            planet of about ten Earth masses a few million years after Jupiter's
+                            formation, which would have disrupted an originally solid Jovian core.
                         </p>
-                        <a
-                            class="planet__link"
-                            href="https://en.wikipedia.org/wiki/Mercury_(planet)"
-                        >
+                        <a class="planet__link" href="https://en.wikipedia.org/wiki/Jupiter">
                             <span class="planet__source">Source:</span>
                             <span class="planet__wikipedia">Wikipedia</span>
                             <img
@@ -74,20 +77,20 @@
                         </a>
                     </div>
                     <nav class="planet__buttons">
-                        <a href="index.html" class="btn h3">
+                        <a href="jupiter-overview.html" class="btn h3">
                             <span class="btn__number">01</span>
                             <span class="planet__tab-desktop">overview</span>
                             <span class="planet__tab-mobile">overview</span>
                         </a>
                         <a
-                            href="mercury-internal-structure.html"
-                            class="btn btn--active btn--mercury h3"
+                            href="jupiter-internal-structure.html"
+                            class="btn btn--active btn--jupiter h3"
                         >
                             <span class="btn__number">02</span>
                             <span class="planet__tab-desktop">internal structure</span>
                             <span class="planet__tab-mobile">structure</span>
                         </a>
-                        <a href="mercury-surface-geology.html" class="btn h3">
+                        <a href="jupiter-surface-geology.html" class="btn h3">
                             <span class="btn__number">03</span>
                             <span class="planet__tab-desktop">surface geology</span>
                             <span class="planet__tab-mobile">surface</span>
@@ -97,19 +100,19 @@
                 <section class="planet__stats">
                     <div class="planet__stat">
                         <span class="planet__stats-label h4">Rotation time</span>
-                        <span class="planet__stats-value h2">58.6 days</span>
+                        <span class="planet__stats-value h2">9.93 hours</span>
                     </div>
                     <div class="planet__stat">
                         <span class="planet__stats-label h4">Revolution time</span>
-                        <span class="planet__stats-value h2">87.97 days</span>
+                        <span class="planet__stats-value h2">11.86 years</span>
                     </div>
                     <div class="planet__stat">
                         <span class="planet__stats-label h4">Radius</span>
-                        <span class="planet__stats-value h2">2,439.7 km</span>
+                        <span class="planet__stats-value h2">69,911 km</span>
                     </div>
                     <div class="planet__stat">
                         <span class="planet__stats-label h4">Average temp.</span>
-                        <span class="planet__stats-value h2">430°C</span>
+                        <span class="planet__stats-value h2">-108°C</span>
                     </div>
                 </section>
             </div>
