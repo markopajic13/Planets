@@ -3,9 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=League+Spartan:wght@100..900&display=swap"
+            rel="stylesheet"
         />
         <link rel="stylesheet" href="variables.css" />
         <link rel="stylesheet" href="reset.css" />
@@ -22,13 +24,22 @@
             <li>
                 <a href="#" class="nav__link nav__link--mercury nav__link--active h4">mercury</a>
             </li>
-            <li><a href="#" class="nav__link nav__link--venus h4">venus</a></li>
-            <li><a href="#" class="nav__link nav__link--earth h4">earth</a></li>
-            <li><a href="#" class="nav__link nav__link--mars h4">mars</a></li>
-            <li><a href="#" class="nav__link nav__link--jupiter h4">jupiter</a></li>
-            <li><a href="#" class="nav__link nav__link--saturn h4">saturn</a></li>
-            <li><a href="#" class="nav__link nav__link--uranus h4">uranus</a></li>
-            <li><a href="#" class="nav__link nav__link--neptune h4">neptune</a></li>
+            <li><a href="venus-overview.html" class="nav__link nav__link--venus h4">venus</a></li>
+
+            <li><a href="earth-overview.html" class="nav__link nav__link--earth h4">earth</a></li>
+            <li><a href="mars-overview.html" class="nav__link nav__link--mars h4">mars</a></li>
+            <li>
+                <a href="jupiter-overview.html" class="nav__link nav__link--jupiter h4">jupiter</a>
+            </li>
+            <li>
+                <a href="saturn-overview.html" class="nav__link nav__link--saturn h4">saturn</a>
+            </li>
+            <li>
+                <a href="uranus-overview.html" class="nav__link nav__link--uranus h4">uranus</a>
+            </li>
+            <li>
+                <a href="neptune-overview.html" class="nav__link nav__link--neptune h4">neptune</a>
+            </li>
         </ul>
     </header>
     <body>
@@ -74,6 +85,24 @@
                             <span class="planet__tab-mobile">surface</span>
                         </a>
                     </nav>
+                </section>
+                <section class="planet__stats">
+                    <div class="planet__stat">
+                        <span class="planet__stats-label h4">Rotation time</span>
+                        <span class="planet__stats-value h2">58.6 days</span>
+                    </div>
+                    <div class="planet__stat">
+                        <span class="planet__stats-label h4">Revolution time</span>
+                        <span class="planet__stats-value h2">87.97 days</span>
+                    </div>
+                    <div class="planet__stat">
+                        <span class="planet__stats-label h4">Radius</span>
+                        <span class="planet__stats-value h2">2,439.7 km</span>
+                    </div>
+                    <div class="planet__stat">
+                        <span class="planet__stats-label h4">Average temp.</span>
+                        <span class="planet__stats-value h2">430°C</span>
+                    </div>
                 </section>
             </div>
         </main>
